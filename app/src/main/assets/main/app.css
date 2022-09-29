@@ -1,0 +1,94 @@
+:root {
+  --coffee: #ECDBBF;
+  --black: #242424;
+  --brown: #7A664B;
+  --gray: #484848;
+  --white: #FFF;
+  --transparent: #00000000;
+  --transparent-black: #24242424;
+  --transparent-white: #FFFFFF24;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('file:///android_asset/main/asset/img/cute.jpg');
+  background-size: cover;
+  background-clip: box;
+}
+
+.title {
+  text-align: center;
+  font-family: AmaticSC Bold;
+  font-size: 72px;
+  letter-spacing: 0.3em;
+  color: var(--brown);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0em 3em 0em 3em;
+  border-radius: 4%;
+  min-width: 90vw;
+  height: 70vh;
+  background-color: var(--transparent-black);
+}
+
+.table-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-width: 90vw;
+}
+
+
+.row {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#time {
+  border-top: solid var(--transparent) 2px;
+  border-right: solid var(--brown) 2px;
+}
+
+#mon, #tue, #wed, #thu, #fri {
+  border-top: solid var(--brown) 2px;
+}
+
+.table-head {
+  font-family: AmaticSC Bold;
+  color: white;
+}
+
+.table-time {
+  font-family: AmaticSC Bold;
+}
+
+.table-data {
+  font-family: AmaticSC Bold;
+}
+
+.table-time, .table-data {
+  margin: 0em 0.5em 0em 0.5em;
+  line-height: 1em;
+}
+
+.table-head, .table-time, .table-data {
+  font-size: 40px;
+  color: var(--black);
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: var(--coffee);
+}

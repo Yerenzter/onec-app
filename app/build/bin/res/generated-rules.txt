@@ -1,0 +1,2 @@
+# Referenced at /storage/emulated/0/Android/data/com.tyron.code/files/Projects/1C/app/build/bin/AndroidManifest.xml:21
+-keep class qubonic.onec.MainActivity { <init>(); }
