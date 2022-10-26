@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyApplication" parent="android:Theme.Material.NoActionBar">
+    <style name="Theme.MyApplication" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
         <!-- Primary brand color. -->
-        <item name="android:colorPrimary">@color/brown</item>
+        <item name="android:colorPrimary">@color/hydra-blue</item>
         <!-- Secondary brand color. -->
-        <item name="android:colorSecondary">@color/coffee</item>
+        <item name="android:colorSecondary">@color/hydra-blue</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/brown</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/hydra-blue</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

@@ -1,0 +1,187 @@
+/*
+Hydra CSS .
+v0.0.1.
+Created by Yerenzter.
+Hydra CSS is a CSS library the stylesheet engine for 1C app to make certain UI components of the web and app.
+*/
+
+:root {
+  --hydra-black-shadow: #24242464;
+  --hydra-blue: #617ED1;
+  --hydra-white: #FFFFFF88;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Hydra Properties */
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center-item {
+  justify-items: center;
+  align-content: center;
+}
+.center-item-top {
+  justify-items: center;
+  align-content: flex-start;
+}
+
+.center-left {
+  float: left;
+}
+
+.center-top {
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.fill {
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.horizontal {
+  display: flex;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 1;
+  z-index: 1;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 100;
+  bottom: 0;
+  z-index: 1;
+}
+
+.rounded-corner {
+  border-radius: 86px;
+}
+
+.rounded-corner-bottom {
+  border-bottom-left-radius: 86px;
+  border-bottom-right-radius: 86px;
+}
+
+.rounded-corner-left {
+  border-top-left-radius: 86px;
+  border-bottom-left-radius: 86px;
+}
+
+.rounded-corner-right {
+  border-top-right-radius: 86px;
+  border-bottom-right-radius: 86px;
+}
+
+.rounded-corner-top {
+  border-top-left-radius: 86px;
+  border-top-right-radius: 86px;
+}
+
+.scrollX {
+  overflow-x: scroll;
+}
+
+.scrollY {
+  overflow: scroll;
+}
+
+.scrollXY {
+  overflow: scroll;
+}
+
+.vertical {
+  display: grid;
+}
+
+/* Hydra UI Componensts */
+.hydra-root {
+  box-sizing: border-box;
+  min-width: 100vw;
+  height: 100vh;
+  background-color: var(--hydra-blue);
+}
+
+.hydra-action-bar {
+  box-sizing: border-box;
+  padding: 1em 0em 1em 1em;
+  min-width: 100vw;
+  height: 10vh;
+}
+
+.hydra-menu-bar-container {
+  margin: 1em 0em 1em 0em;
+  padding: 0.6em 1em 2em 1em;
+  width: 11vw;
+  height: 4.7vh;
+  background-color: var(--hydra-white);
+  box-shadow: 0px 2px 8px var(--hydra-black-shadow);
+}
+
+.hydra-menu-bar-container:active {
+  background-color: var(--hydra-black-shadow);
+  box-shadow: 0px 0px 24px var(--hydra-black-shadow);
+}
+
+.hydra-menu-bar {
+  display: block;
+  margin: 1em 0em 0em 0em;
+  border-radius: 45px;
+  width: 4em;
+  height: 1em;
+  background-color: var(--hydra-blue);
+}
+
+.hydra-content {
+  width: 100vw;
+  height: 90vh;
+}
+
+.hydra-box {
+  box-sizing: border-box;
+  width: 80vw;
+  height: 30vh;
+  background-color: var(--hydra-white);
+}
+
+.hydra-seperator-container {
+  width: 100vw;
+  height: 5vh;
+}
+
+.hydra-seperator {
+  width: inherit;
+  height: inherit;
+}
+
+.hydra-seperator::before {
+  content: " ";
+  margin: 0em 1em 0em 1em;
+  width: 33vw;
+  height: 0.5vh;
+  background-color: var(--hydra-white);
+}
+
+.hydra-seperator::after {
+  content: " ";
+  margin: 0em 1em 0em 1em;
+  width: 33vw;
+  height: 0.5vh;
+  background-color: var(--hydra-white);
+}
+
+.hydra-seperator-title {
+  width: 33vw;
+  font-family: Poppins Bold;
+  font-size: 64px;
+  color: var(--hydra-white);
+}

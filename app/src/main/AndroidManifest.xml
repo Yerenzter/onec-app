@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="qubonic.onec"
-    android:versionCode="1"
-	android:versionName="STATUS:STABLE">
+    android:versionCode="1024"
+	android:versionName="v1.rev1:HYDRA">
 
     
-    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="31"/>
+    <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="31"/>
 
     <application
         android:allowBackup="true"
-		android:icon="@drawable/icon"
-		android:roundIcon="@drawable/icon"
-		android:appCategory="accessibility"
-		android:hasCode="true"
-        android:label="@string/app_name"
+        android:icon="@drawable/icon_foreground"
+        android:label="@string/onec"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+		android:appCategory="accessibility"
+		android:isGame="true"
+		android:hasCode="true"
+		android:hardwareAccelerated="true"
+		android:logo="@drawable/icon_foreground"
+		android:restoreAnyVersion="true"
+		android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".MainActivity"
+			android:turnScreenOn="true"
+			android:immersive="true"
+			android:showForAllUsers="true"
+			android:showOnLockScreen="true"
 			android:screenOrientation="portrait"
-			android:excludeFromRecents="true"
-			android:visibleToInstantApps="true"
-			android:allowEmbedded="true"
+			android:autoRemoveFromRecents="true"
+			android:noHistory="true"
+			android:hardwareAccelerated="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

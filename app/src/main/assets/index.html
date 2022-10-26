@@ -1,170 +1,344 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="oem-852">
-        <meta name="viewport" content="1024">
-		<meta name="title" content="1C">
-		<meta name="author" content="Yerenzter">
-		<meta name="description" content="Daily class schedule for BS-INFO 1C students.">
-		<meta name="theme-color" content="#7A664B">
-		<title>BS-INFO 1C Daily Schedule</title>
-		<link href="main/app.css" rel="stylesheet">
-		<style type="text/css">
-		  @font-face {
-		    font-family: AmaticSC Bold;
-		    src: url('file:///android_asset/main/asset/font/AmaticSC-Bold.ttf');
-		  }
-		  
-		  @font-face {
-		    font-family: AmaticSC Regular;
-		    src: url('file:///android_asset/main/asset/font/AmaticSC-Regular.ttf');
-		  }
-		  
-		  @font-face {
-		    font-family: Poppins Light;
-		    src: url('file:///android_asset/main/asset/font/Poppins-Light.ttf');
-		  }
-		</style>
-	</head>
-	<body>
-	  <div id="root">
-	    <h1 class="title">Class Schedule for BS INFO I-C</h1>
-	    <div class="container">
-	      <div class="table-box">
-	        <div class="row" id="time">
-	          <p class="table-head">TIME</p>
-	          <p class="table-time">7:30-8:00</p>
-	          <p class="table-time">8:30-9:00</p>
-	          <p class="table-time">9:00-9:30</p>
-	          <p class="table-time">9:30-10:00</p>
-	          <p class="table-time">10:00-10:30</p>
-	          <p class="table-time">10:30-11:00</p>
-	          <p class="table-time">11:00-11:30</p>
-	          <p class="table-time">11:30-12:00</p>
-	          <p class="table-time">12:00-12:30</p>
-	          <p class="table-time">12:30-1:00</p>
-	          <p class="table-time">1:00-1:30</p>
-	          <p class="table-time">1:30-2:00</p>
-	          <p class="table-time">2:00-2:30</p>
-	          <p class="table-time">2:30-3:00</p>
-	          <p class="table-time">3:00-3:30</p>
-	          <p class="table-time">3:30-4:00</p>
-	          <p class="table-time">4:00-4:30</p>
-	          <p class="table-time">4:30-5:00</p>
-	          <p class="table-time">5:00-5:30</p>
-	        </div>
-	        <div class="row" id="mon">
-	          <p class="table-head">MON</p>
-	          <p class="table-data">GEC 3</p>
-	          <p class="table-data">NAB 12A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">ITCOM 1</p>
-	          <p class="table-data">ICT 304</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">MATH 3</p>
-	          <p class="table-data">-</p>
-	          <p class="table-data">NAB 6A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">GEC 4</p>
-	          <p class="table-data">NAB 8A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	        </div>
-	        <div class="row" id="tue">
-	          <p class="table-head">TUE</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">PE 1</p>
-	          <p class="table-data">GS STAGE</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">CPROG 1</p>
-	          <p class="table-data">ICT 309</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">CPROG 1</p>
-	          <p class="table-data">ICT 302</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">ITCOM 1</p>
-	          <p class="table-data">CONF.RM.</p>
-	          <p class="table-data">GEE 9</p>
-	          <p class="table-data">-</p>
-	          <p class="table-data">ICT 106</p>
-	        </div>
-	        <div class="row" id="wed">
-	          <p class="table-head">WED</p>
-	          <p class="table-data">GEC 3</p>
-	          <p class="table-data">NAB 12A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">ITCOM 1</p>
-	          <p class="table-data">ICT 304</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">MATH 3</p>
-	          <p class="table-data">-</p>
-	          <p class="table-data">NAB 6A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">GEC 4</p>
-	          <p class="table-data">NAB 8A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	        </div>
-	        <div class="row" id="thu">
-	          <p class="table-head">THU</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">PE 1</p>
-	          <p class="table-data">GS STAGE</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">CPROG 1</p>
-	          <p class="table-data">ICT 309</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">CPROG 1</p>
-	          <p class="table-data">ICT 302</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">ITCOM 1</p>
-	          <p class="table-data">CONF.RM.</p>
-	          <p class="table-data">GEE 9</p>
-	          <p class="table-data">-</p>
-	          <p class="table-data">ICT 106</p>
-	        </div>
-	        <div class="row" id="fri">
-	          <p class="table-head">FRI</p>
-	          <p class="table-data">GEC 3</p>
-	          <p class="table-data">NAB 12A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">ITCOM 1</p>
-	          <p class="table-data">ICT 304</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">MATH 3</p>
-	          <p class="table-data">-</p>
-	          <p class="table-data">NAB 6A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">GEC 4</p>
-	          <p class="table-data">NAB 8A</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	          <p class="table-data">&nbsp;</p>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</body>
+  <head>
+    <meta charset="oem-852">
+    <meta name="viewport" content="1024">
+    <meta name="title" content="1C">
+    <meta name="author" content="Yerenzter">
+    <meta name="description" content="Is an open-source cross-platform class schedule system for BS-INFO 1C students.">
+    <meta name="keywords" content="1c, 1C, 1-C, BS-INFO, BS-INFO 1-C, BS-INFO 1C, INFO 1C, INFO 1-C, onec, Onec, ONEC, Yerenzter, yerenzter, qubonic, Qubonic">
+    <meta name="theme-color" content="#617ED1">
+    <title>1C Class Schedule</title>
+    <link href="lib/hydra/hydra.css" rel="stylesheet">
+    <link href="main/app.css" rel="stylesheet">
+    <link href="main/asset/img/favicon.png" type="img/png" sizes="32x32" rel="icon">
+    <link href="lib/hydra/hydra_animate.css" rel="stylesheet">
+    <script src="lib/hydra/hydra.js" type="text/javascript"></script>
+    <script src="main/event.js" type="text/javascript"></script>
+    <style type="text/css">
+      @font-face {
+        font-family: Poppins Black;
+        src: url('/main/asset/font/Poppins-Black.ttf');
+      }
+      
+      @font-face {
+        font-family: Poppins Bold;
+        src: url('file:///android_asset/main/asset/font/Poppins-Bold.ttf');
+      }
+      
+      @font-face {
+        font-family: Poppins Light;
+        src: url('file:///android_asset/main/asset/font/Poppins-Light.ttf');
+      }
+      
+      @font-face {
+        font-family: Poppins Regular;
+        src: url("file:///android_asset/main/asset/font/Poppins-Regular.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Root layout of the app. -->
+    <div class="hydra-root">
+      
+      <!-- Body layout of the app. -->
+      <div class="hydra-content vertical center scrollXY">
+        
+        <!-- First box layout contains time, date, greetings and username. -->
+        <div class="hydra-box vertical center rounded-corner box1">
+          
+          <!-- Time and date section. -->
+          <div class="hydra-box horizontal center rounded-corner box1-1">
+            
+            <!-- Date section. -->
+            <div class="hydra-box vertical center-top rounded-corner box1-1-1">
+              
+              <!-- Month label. -->
+              <div class="hydra-box horizontal center rounded-corner-top box1-1-1-1">
+                <p id="month">?</p>
+              </div>
+              
+              <!-- Day label. -->
+              <div class="hydra-box horizontal center box1-1-1-2">
+                <p id="day">?</p>
+              </div>
+            </div>
+            
+            <!--- Time section -->
+            <div class="hydra-box horizontal center rounded-corner box1-1-2">
+              
+              <!-- Hour and minute section -->
+              <div class="hydra-box vertical center rounded-corner box1-1-2-1">
+                
+                <!-- Hour section. -->
+                <div class="hydra-box horizontal center rounded-corner box1-1-2-1-1">
+                  <p id="hour">?</p>
+                </div>
+                
+                <!-- Minute section -->
+                <div class="hydra-box horizontal center rounded-corner box1-1-2-1-2">
+                  <p id="minute">?</p>
+                </div>
+              </div>
+              <div class="hydra-box horizontal center rounded-corner box1-1-2-2">
+                <p id="meridian">?</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Greeting and username section. -->
+          <div class="hydra-box vertical center rounded-corner box1-2">
+            
+            <!-- Greeting section -->
+            <div class= "hydra-box horizontal center rounded-corner box1-2-1">
+              <p id="greeting" class="horizontal">?</p>
+            </div>
+            
+            <!-- Username section -->
+            <div class="hydra-box horizontal center rounded-corner box1-2-2">
+              <p id="username">?</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second box layout contains the subject and name of the instructor. -->
+        <div class="hydra-box center-top vertical rounded-corner box2">
+          
+          <!-- Narrator section. -->
+          <div class="hydra-box center horizontal rounded-corner box2-1">
+            <p id="narrator">?</p>
+          </div>
+          
+          <!-- Subject and instructor name section. -->
+          <div class="hydra-box vertical center rounded-corner box2-2">
+            
+            <!-- Subject section. -->
+            <div class="hydra-box horizontal center box2-2-1">
+              <p id="subject">?</p>
+            </div>
+            
+            <!-- Instructor name section -->
+            <div class="hydra-box horizontal center rounded-corner-bottom box2-2-2">
+              <p id="instructor">?</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third box layout contains room location and next subject queue. -->
+        <div class="hydra-box horizontal center box3">
+          
+          <!-- Room location section. -->
+          <div class="hydra-box vertical center rounded-corner box3-1">
+            
+            <!-- At section. -->
+            <div class="hydra-box horizontal center rounded-corner box3-1-1">
+              <p id="locator">?</p>
+            </div>
+            
+            <!-- Room section. -->
+            <div class="hydra-box horizontal center rounded-corner box3-1-2">
+              <p id="location">?<p>
+            </div>
+          </div>
+          
+          <!-- Next subject queue section -->
+          <div class="hydra-box vertical center rounded-corner box3-2">
+            
+            <!-- Queue system section. -->
+            <div class="hydra-box center horizontal rounded-corner-top box3-2-1">
+              <p id="queue-state">?</p>
+            </div>
+            
+            <!-- Next subject section -->
+            <div class="hydra-box center horizontal rounded-corner box3-2-2">
+              <p id="queue">?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Action bar at the bottom most level in the app layout. -->
+      <div id="menu-on" class="hydra-action-bar horizontal center overlay-menu">
+        
+        <!-- Menu bar icon -->
+        <div class="hydra-bar hydra-menu-bar-container center vertical rounded-corner menu-box" onclick="OnMenu(this)">
+          <div class="hydra-menu-bar" onclick="OnMenu(this)"></div>
+          <div class="hydra-menu-bar" onclick="OnMenu(this)"></div>
+          <div class="hydra-menu-bar" onclick="OnMenu(this)"></div>
+        </div>
+      </div>
+      
+      <!-- Menu layout -->
+      <div id="menu" class="hydra-box center-top vertical overlay menu">
+        <div id="bio-name" class="hydra-box center horizontal">
+          <div id="user-name-box" class="hydra-box center horizontal">
+            <input id="user-name" type="text" placeholder="Enter username" onkeyup="showClearBtn()">
+            <input id="clear" class="rounded-corner" type="button" value="╳" onclick="OnClear()">
+          </div>
+          <input id="submit" class="rounded-corner" type="submit" value="➤" onclick="SetName()">
+        </div>
+        
+        <!-- Selections -->
+        <div class="hydra-box vertical center-item scrollX menu-item-container">
+          <div class="hydra-box horizontal center rounded-corner menu-item">
+            <p class="menu-item-title horizontal center rounded-corner" onclick="OnSchedule()">Schedules</p>
+          </div>
+          <div id="select-settings" class="hydra-box horizontal center rounded-corner menu-item">
+            <p class="menu-item-title horizontal center rounded-corner">Settings</p>
+          </div>
+          <div class="hydra-box horizontal center rounded-corner menu-item">
+            <p class="menu-item-title horizontal center rounded-corner" onclick="OnAbout()">About</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Action bar at the bottom most level in the app layout. -->
+      <div id="menu-box-close" class="hydra-action-bar horizontal center overlay-menu">
+        
+        <!-- Menu bar icon -->
+        <div class="hydra-bar hydra-menu-bar-container center horizontal rounded-corner menu-box-close" onclick="OnCloseMenuIcon(this)">
+          <p class="close-menu-icon">✕</p>
+        </div>
+      </div>
+      
+      <!-- Schedule Layout -->
+      <div id="schedule" class="hydra-box center-item vertical overlay scrollY menu-item-page">
+        
+        <!-- MWF SEPERATOR -->
+        <div class="hydra-seperator-container center horizontal">
+          <div class="hydra-seperator center horizontal">
+            <p class="hydra-seperator-title center horizontal">M-W-F</p>
+          </div>
+        </div>
+        <div id="mwf" class="hydra-box center horizontal rounded-corner schedule-container">
+          
+          <!-- TIME COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">TIME</p>
+            <p class="table-data">7:30-8:30</p>
+            <p class="table-data">9:30-10:30</p>
+            <p class="table-data">11:30-12:30</p>
+            <p class="table-data">1:00-2:00</p>
+          </div>
+          
+          <!-- SCHEDULE COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">SUBJECTS</p>
+            <p class="table-data">GEC 3</p>
+            <p class="table-data">ITCOM 1</p>
+            <p class="table-data">MATH 3</p>
+            <p class="table-data">GEC 4</p>
+          </div>
+          
+          <!-- INSTRUCTOR COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">INSTRUCTORS</p>
+            <p class="table-data">Ms. Manglalan</p>
+            <p class="table-data">Ms. Lampaza</p>
+            <p class="table-data">Mr. Villar</p>
+            <p class="table-data">Mrs. De San Jose</p>
+          </div>
+        </div>
+        
+        <!-- TTH SEPERATOR -->
+        <div class="hydra-seperator-container center horizontal">
+          <div class="hydra-seperator center horizontal">
+            <p class="hydra-seperator-title center horizontal">T-Th</p>
+          </div>
+        </div>
+        
+        <!-- TTh SCHEDULE -->
+        <div id="tth" class="hydra-box center-top horizontal rounded-corner schedule-container">
+          
+          <!-- TIME COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">TIME</p>
+            <p class="table-data">9:00-10:00</p>
+            <p class="table-data">11:00-12:00</p>
+            <p class="table-data">1:30-2:30</p>
+            <p class="table-data">3:30-4:30</p>
+            <p class="table-data">4:30-5:30</p>
+          </div>
+          
+          <!-- SCHEDULE COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">SUBJECTS</p>
+            <p class="table-data">P.E.</p>
+            <p class="table-data">CPROG 1</p>
+            <p class="table-data">CPROG 1</p>
+            <p class="table-data">ITCOM 1</p>
+            <p class="table-data">GEE 9</p>
+          </div>
+          
+          <!-- INSTRUCTOR COLUMN -->
+          <div class="hydra-box center-item vertical rounded-corner schedule-box">
+            <p class="table-head">INSTRUCTORS</p>
+            <p class="table-data">Ms. Plandez</p>
+            <p class="table-data">Ms. Saballa</p>
+            <p class="table-data">Ms. Saballa</p>
+            <p class="table-data">Ms. Lampaza</p>
+            <p class="table-data">Ms. Murallon</p>
+          </div>
+          <!-- Action bar at the bottom most level in the app layout. -->
+          <div id="schedule-box-close" class="hydra-action-bar horizontal center overlay-menu">
+        
+          <!-- Menu bar icon -->
+          <div class="hydra-bar hydra-menu-bar-container center horizontal rounded-corner menu-box-close" onclick="OnScheduleClose(this)">
+            <p class="close-menu-icon">✕</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <!-- About Layout -->
+      <div id="about" class="hydra-box center-item-top vertical overlay scrollY menu-item-page">
+        
+        <!-- Application Information section -->
+        <div class="hydra-box center vertical rounded-corner app-info-container">
+          
+          <!-- APP ICON -->
+          <div class="hydra-box vertical center-item app-info-box">
+            <img src="main/asset/img/icon1000x1000.png" width="512" height="512">
+            <div class="hydra-box center horizontal version">
+              <p id="version">v1.rev1:HYDRA</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hydra-box horizontal center rounded-corner app-detail-container">
+          <p class="app-info-description">1C (ONEC) is a free and open-source automatic class scheduling system and it is a web application compiled in Android Java.</p>
+        </div>
+        
+        <div class="hydra-box vertical center rounded-corner app-detail-container">
+          <div class="hydra-box horizontal center app-detail-title">
+            <p>Developer</p>
+          </div>
+          
+          <div class="hydra-box horizontal center app-detail-name">
+            <p>Yerenzter</p>
+          </div>
+        </div>
+        
+        <div class="hydra-box vertical center rounded-corner app-detail-container">
+          <div class="hydra-box horizontal center app-detail-title">
+            <p>Publisher</p>
+          </div>
+          
+          <div class="hydra-box horizontal center app-detail-name">
+            <p>Qubonic A & S</p>
+          </div>
+        </div>
+        
+        <!-- Action bar at the bottom most level in the app layout. -->
+        <div id="about-box-close" class="hydra-action-bar horizontal center overlay-menu">
+        
+          <!-- Menu bar icon -->
+          <div class="hydra-bar hydra-menu-bar-container center horizontal rounded-corner menu-box-close" onclick="OnAboutClose(this)">
+            <p class="close-menu-icon">✕</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main/app.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="brown">#78664B</color>
-    <color name="coffee">#ECDBBF</color>
+    <color name="hydra-blue">#FF617ED1</color>
+    <color name="hydra-white">#64FFFFFF</color>
 </resources>

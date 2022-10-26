@@ -1,0 +1,75 @@
+:root {
+  --hydra-black-shadow: #24242464;
+  --hydra-blue: #617ED1;
+  --hydra-white: #FFFFFF88;
+}
+
+@keyframes rise {
+  from {
+    margin-top: 100em;
+    opacity: 0%;
+  }
+  to {
+    margin-top: 0em;
+    opacity: 100%;
+  }
+}
+
+@keyframes drop {
+  from {
+    margin-top: 0em;
+    opacity: 100%;
+  }
+  to {
+    margin-top: 100em;
+    opacity: 0%;
+  }
+}
+
+@keyframes popUp {
+  from {
+    width: 0vw;
+    height: 0vh;
+    background-color: var(--hydra-white);
+    opacity: 25%;
+  }
+  to {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--hydra-blue);
+    opacity: 100%;
+  }
+}
+
+@keyframes popDown {
+  from {
+    margin: 0em 0em 0em 0em;
+    width: 100vw;
+    height: 100vh;
+    opacity: 100%;
+  }
+  to {
+    margin: 100em 0em 100em 0em;
+    width: 0vw;
+    height: 0vh;
+    opacity: 25%;
+  }
+}
+
+@keyframes deround {
+  from {
+    border-radius: 86px;
+  }
+  to {
+    border-radius: 45px;
+  }
+}
+
+@keyframes roundBack {
+  from {
+    border-radius: 45px;
+  }
+  to {
+    border-radius: 86px
+  }
+}
