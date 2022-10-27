@@ -6,7 +6,7 @@
     android:versionName="v1.rev1:HYDRA" >
 
     <uses-sdk
-        android:minSdkVersion="1"
+        android:minSdkVersion="16"
         android:targetSdkVersion="30" />
 
     <application

@@ -1,5 +1,5 @@
 {
-  "minSdkVersion": 1.0,
+  "minSdkVersion": 16.0,
   "viewBindingEnabled": false,
   "libraries": "[]",
   "useR8": false,

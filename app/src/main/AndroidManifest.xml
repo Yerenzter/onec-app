@@ -5,7 +5,7 @@
 	android:versionName="v1.rev1:HYDRA">
 
     
-    <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="31"/>
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="31"/>
 
     <application
         android:allowBackup="true"
