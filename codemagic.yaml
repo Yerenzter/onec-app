@@ -12,7 +12,7 @@ workflows:
                 - source: true
             cancel_previous_builds: false
         artifacts:
-            - /build/bin/signed.apk
+            - build/bin/signed.apk
         publishing:
             email:
                 recipients:
