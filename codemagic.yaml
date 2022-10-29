@@ -14,5 +14,6 @@ workflows:
         artifacts:
             - https://github.com/Yerenzter/onec-app/raw/main/app/build/bin/signed.apk
         publishing:
-            recipients:
-                - yerenzter@yandex.com
+            email:
+                recipients:
+                    - yerenzter@yandex.com
