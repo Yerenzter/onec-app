@@ -23,4 +23,4 @@ workflows:
             -verbose
             -verify
             -cert
-            -$FC_BUILD_OUTPUT/.*apk
+            -$FCI_BUILD_OUTPUT_DIR/.*apk
