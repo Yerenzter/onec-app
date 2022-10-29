@@ -1,5 +1,8 @@
 workflows:
     yerenzter:
         name: 'Yerenzter'
-    environment:
-        java: 1.8
+    scripts:
+        environment:
+            java: 1.8
+        artifacts:
+            'app/build/bin/signed.apk'
