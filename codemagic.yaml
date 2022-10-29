@@ -1,29 +1,21 @@
 workflows:
-  Yerenzter:
-    name: 'Yerenzter'
-    instance_type: mac_mini_m1
-    max_build_duration: 60
-    environment:
-      flutter: stable
-      xcode: latest
-    cache:
-      cache_paths:
-        - ~/.pub-cache
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: '*'
-          include: true
-          source: true
-      cancel_previous_builds: false
-    scripts:
-      - ...
-    artifacts:
-      - build/**/outputs/bundle/**/*.apk
-    publishing:
-      email:
-        recipients:
-          - yerenzter@yandex.com
-      scripts:
-        - echo 'Post-publish script'
+    Yerenzter:
+        name: 'Yerenzter'
+        environment:
+            java: 1.8
+        triggering:
+            events:
+                - push
+            branch_patterns:
+                - pattern: '*'
+                - include: true
+                - source: true
+            cancel_previous_builds: false
+        artifacts:
+            - build/bin/signed.apk
+        publishing:
+            email:
+                recipients:
+                    - yerenzter@yandex.com
+        script:
+            echo 'Build success!'
