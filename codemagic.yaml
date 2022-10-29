@@ -17,5 +17,5 @@ workflows:
             email:
                 recipients:
                     - yerenzter@yandex.com
-        script:
+        scripts:
             - echo 'Build success!'
