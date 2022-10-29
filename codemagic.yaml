@@ -1,16 +1,10 @@
 workflows:
-  my-workflow:
-    name: My workflow name
-    labels:
-      - QA
-      - ${TENANT_NAME}
+  Yerenzter:
+    name: 'Yerenzter'
     instance_type: mac_mini_m1
     max_build_duration: 60
     environment:
       groups:
-        - group_name
-      vars:
-        PUBLIC_ENV_VAR: "value here"
       flutter: stable
       xcode: latest
     cache:
@@ -27,10 +21,10 @@ workflows:
     scripts:
       - ...
     artifacts:
-      - build/**/outputs/bundle/**/*.aab
+      - build/**/outputs/bundle/**/*.apk
     publishing:
       email:
         recipients:
-          - name@example.com
+          - yerenzter@yandex.com
       scripts:
         - echo 'Post-publish script'
