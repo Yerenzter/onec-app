@@ -18,4 +18,4 @@ workflows:
                 recipients:
                     - yerenzter@yandex.com
         script:
-            echo 'Build success!'
+            - echo 'Build success!'
