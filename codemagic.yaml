@@ -1,7 +1,6 @@
 workflows:
     yerenzter:
         name: 'Yerenzter'
-    scripts:
     environment:
         java: 1.8
     artifacts:
