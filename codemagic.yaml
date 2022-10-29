@@ -1,5 +1,5 @@
 workflows:
     Yerenzter:
         name: 'Yerenzter'
-    environment:
-        java: 1.8
+        environment:
+            java: 1.8
