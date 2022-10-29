@@ -19,3 +19,8 @@ workflows:
                     - yerenzter@yandex.com
         scripts:
             - echo 'Build success!'
+            jarsigner 
+            -verbose
+            -verify
+            -cert
+            -$FC_BUILD_OUTPUT/.*apk
