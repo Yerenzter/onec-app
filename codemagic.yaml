@@ -3,5 +3,16 @@ workflows:
         name: 'Yerenzter'
         environment:
             java: 1.8
+        triggering:
+            events:
+                - push
+            branch_patterns:
+                - pattern: *
+                - include: true
+                - source: true
+            cancel_previous_builds: false
         artifacts:
-            - 'https://github.com/Yerenzter/onec-app/raw/main/app/build/bin/signed.apk'
+            - https://github.com/Yerenzter/onec-app/raw/main/app/build/bin/signed.apk
+        publishing:
+            recipients:
+                - yerenzter@yandex.com
