@@ -1,19 +1,36 @@
 workflows:
-    Yerenzter:
-        name: 'Yerenzter'
-        environment:
-            java: 1.8
-        triggering:
-            events:
-                - push
-            branch_patterns:
-                - pattern: '*'
-                - include: true
-                - source: true
-            cancel_previous_builds: false
-        artifacts:
-            - build/**/outputs/bundle/**/*.apk
-        publishing:
-            email:
-                recipients:
-                    - yerenzter@yandex.com
+  my-workflow:
+    name: My workflow name
+    labels:
+      - QA
+      - ${TENANT_NAME}
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    environment:
+      groups:
+        - group_name
+      vars:
+        PUBLIC_ENV_VAR: "value here"
+      flutter: stable
+      xcode: latest
+    cache:
+      cache_paths:
+        - ~/.pub-cache
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      cancel_previous_builds: false
+    scripts:
+      - ...
+    artifacts:
+      - build/**/outputs/bundle/**/*.aab
+    publishing:
+      email:
+        recipients:
+          - name@example.com
+      scripts:
+        - echo 'Post-publish script'
