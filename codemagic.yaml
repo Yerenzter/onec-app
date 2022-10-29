@@ -4,4 +4,4 @@ workflows:
         environment:
             java: 1.8
         artifacts:
-            {'/app/build/bin/signed.apk'}
+            -'/app/build/bin/signed.apk'
