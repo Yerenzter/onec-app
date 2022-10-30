@@ -1,12 +1,12 @@
 workflows:
-    Yerenzter:
-        name: 'Yerenzter'
+    android-app:
+        name: Native Android
         environment:
             java: 1.8
             vars:
                 PACKAGE_NAME: "qubonic.onec"
         scripts:
-            /gradlew
+            ./gradlew test
         triggering:
             events:
                 - push
@@ -16,7 +16,9 @@ workflows:
                 - source: true
             cancel_previous_builds: false
         artifacts:
-            - build/bin/signed.apk
+            - app/build/**/outputs/**/**/*.apk
+        scripts:
+            ./gradlew test
         publishing:
             email:
                 recipients:
