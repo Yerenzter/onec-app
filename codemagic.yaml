@@ -16,7 +16,7 @@ workflows:
                 - source: true
             cancel_previous_builds: false
         artifacts:
-            - app/build/**/outputs/**/**/*.apk
+            - app/build/bin/signed.apk
         scripts:
             ./gradlew test
         publishing:
