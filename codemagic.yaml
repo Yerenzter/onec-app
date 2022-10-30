@@ -2,8 +2,6 @@ workflows:
     Yerenzter:
         name: 'Yerenzter'
         environment:
-            android_signing:
-                - keystore_reference
             java: 1.8
             vars:
                 PACKAGE_NAME: "qubonic.onec"
