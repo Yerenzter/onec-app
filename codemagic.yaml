@@ -7,7 +7,7 @@ workflows:
                 PACKAGE_NAME: "qubonic.onec"
         scripts: |
             name: "1C"
-            cat 'app/build/bin/signed.apk'
+            echo cat 'app/build/bin/signed.apk'
         triggering:
             events:
                 - push
