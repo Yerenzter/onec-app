@@ -5,6 +5,6 @@ An official source for 1C application for Android platform. And it is an open-so
 
 To compile this app into standalone APK you need to choose these IDEs below:
 
-- CodeAssist
-- JvDroid
-- Android Studio
+- CodeAssist (Android)
+- JvDroid (Android)
+- Android Studio (GNU/Linux, Windows, MacOS)
