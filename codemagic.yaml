@@ -1,6 +1,8 @@
 workflows:
-    android-app:
-        name: Native Android
+    Yerenzter:
+        name: Yerenzter
+        scripts:
+            - echo 'Compiling...'
         environment:
             java: 1.8
             vars:
