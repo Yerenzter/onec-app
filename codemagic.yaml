@@ -5,9 +5,8 @@ workflows:
             java: 1.8
             vars:
                 PACKAGE_NAME: "qubonic.onec"
-        scripts: |
-            name: "1C"
-            - cat 'app/build/bin/signed.apk'
+        scripts:
+            /gradlew
         triggering:
             events:
                 - push
