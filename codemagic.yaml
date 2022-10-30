@@ -26,4 +26,3 @@ workflows:
                     - yerenzter@yandex.com
         scripts:
             - echo 'Build success!'
-        scriptw
