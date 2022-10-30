@@ -2,7 +2,14 @@ workflows:
     Yerenzter:
         name: 'Yerenzter'
         environment:
+            android_signing:
+                - keystore_reference
             java: 1.8
+            vars:
+                PACKAGE_NAME: "qubonic.onec"
+        scripts: |
+            name: "1C"
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties
         triggering:
             events:
                 - push
@@ -19,8 +26,4 @@ workflows:
                     - yerenzter@yandex.com
         scripts:
             - echo 'Build success!'
-            jarsigner 
-            -verbose
-            -verify
-            -cert
-            -$FCI_BUILD_OUTPUT_DIR/.*apk
+        scriptw
