@@ -7,7 +7,7 @@ workflows:
                 PACKAGE_NAME: "qubonic.onec"
         scripts: |
             name: "1C"
-            echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/android/local.properties
+            cat 'app/build/bin/signed.apk'
         triggering:
             events:
                 - push
