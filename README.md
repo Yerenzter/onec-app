@@ -11,6 +11,7 @@ To compile this app into standalone APK you need to choose these IDEs below:
 - Android Studio (Windows, Macintosh, GNU/Linux)
 
 ### Website
+
 <div align="center">
 <div>
 <img src="https://github.com/Yerenzter/onec/raw/main/main/asset/img/icon.png" width="64" height="64">
