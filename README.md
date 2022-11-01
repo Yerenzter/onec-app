@@ -8,3 +8,7 @@ To compile this app into standalone APK you need to choose these IDEs below:
 - CodeAssist (Android)
 - JvDroid (Android)
 - Android Studio (GNU/Linux, Windows, MacOS)
+
+### Website
+
+[1C | Download](https://yerenzter.github.io/onec)
